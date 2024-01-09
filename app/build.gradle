@@ -33,6 +33,11 @@ android {
 //    lintOptions {
 //        abortOnError false
 //    }
+
+    // some error for unchecked into build.gradle
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    }
 }
 
 publishing {
