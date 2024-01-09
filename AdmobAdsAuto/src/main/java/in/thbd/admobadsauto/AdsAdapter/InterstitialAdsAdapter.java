@@ -1,4 +1,4 @@
-package in.thbd.admobadsauto;
+package in.thbd.admobadsauto.AdsAdapter;
 
 import static android.content.ContentValues.TAG;
 

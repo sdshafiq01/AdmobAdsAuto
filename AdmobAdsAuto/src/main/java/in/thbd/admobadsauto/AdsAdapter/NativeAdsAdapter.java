@@ -1,4 +1,4 @@
-package in.thbd.admobadsauto;
+package in.thbd.admobadsauto.AdsAdapter;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
