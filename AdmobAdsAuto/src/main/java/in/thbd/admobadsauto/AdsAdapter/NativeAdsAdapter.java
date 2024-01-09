@@ -32,8 +32,6 @@ public class NativeAdsAdapter {
     */
     public static void LoadNativeAdmob(Activity activity, RelativeLayout adLayout, String idNative,String size) {
 
-        ColorDrawable background = new ColorDrawable();
-        background.setColor(activity.getResources().getColor(com.google.android.ads.nativetemplates.R.color.gnt_white));
 
          adLoader = new AdLoader.Builder(activity, idNative)
                 .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
@@ -51,10 +49,10 @@ public class NativeAdsAdapter {
 
 
 //                     view.setVisibility(View.VISIBLE);
-                        NativeTemplateStyle styles = new
-                                NativeTemplateStyle.Builder().withMainBackgroundColor(background).build();
+//                        NativeTemplateStyle styles = new
+//                                NativeTemplateStyle.Builder().withMainBackgroundColor().build();
 //                            TemplateView template = findViewById(R.id.my_template);
-                        view.setStyles(styles);
+//                        view.setStyles(styles);
                         view.setNativeAd(nativeAd);
                         adLayout.setVisibility(View.VISIBLE);
                         adLayout.removeAllViews();

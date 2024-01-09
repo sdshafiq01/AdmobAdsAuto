@@ -25,6 +25,13 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
 }
+publishing {
+
+    repositories {
+        mavenLocal()
+    }
+}
+
 //publishing {
 //    publications {
 //        maven(MavenPublication) {
@@ -44,6 +51,8 @@ android {
 //                }
 //            }
 //        }
+
+
 tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }

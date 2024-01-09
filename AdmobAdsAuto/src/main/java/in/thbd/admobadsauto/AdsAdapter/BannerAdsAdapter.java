@@ -60,9 +60,11 @@ public class BannerAdsAdapter {
 
 
     private static AdSize getAdSize(Activity activity) {
-        Display display = activity.getWindowManager().getDefaultDisplay();
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        display.getMetrics(outMetrics);
+        DisplayMetrics outMetrics = activity.getResources().getDisplayMetrics();
+//        int width = display.widthPixels;
+//        Display display = activity.getWindowManager().getDefaultDisplay();
+//        DisplayMetrics outMetrics = new DisplayMetrics();
+//        display.getMetrics(outMetrics);
         float widthPixels = outMetrics.widthPixels;
         float density = outMetrics.density;
         int adWidth = (int) (widthPixels / density);
