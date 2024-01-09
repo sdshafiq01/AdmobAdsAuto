@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'in.thbd.admobads'
-    compileSdk 34
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "in.thbd.admobads"
-        minSdk 21
-        targetSdk 34
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -30,6 +30,13 @@ android {
 
     lintOptions {
         abortOnError false
+    }
+}
+
+publishing {
+
+    repositories {
+        mavenLocal()
     }
 }
 
