@@ -1,4 +1,4 @@
-package in.thbd.admobadsauto.AdsAdapter;
+package in.thbd.admobadsauto;
 
 import android.app.Activity;
 import android.util.Log;

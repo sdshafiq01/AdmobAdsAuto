@@ -67,7 +67,7 @@
               app:layout_constraintTop_toTopOf="parent"
               app:layout_constraintBottom_toBottomOf="parent"
               app:layout_constraintEnd_toStartOf="@id/content"
-              />
+              tools:ignore="RtlCompat" />
           <androidx.constraintlayout.widget.ConstraintLayout
               android:layout_width="@dimen/gnt_no_size"
               android:layout_height="@dimen/gnt_no_size"
@@ -110,8 +110,7 @@
                   app:layout_constraintBottom_toBottomOf="parent"
                   app:layout_constraintEnd_toEndOf="parent"
                   app:layout_constraintStart_toEndOf="parent"
-                  app:layout_constraintTop_toTopOf="parent"
-                  ></TextView>
+                  app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/row_two"
@@ -140,7 +139,8 @@
                   app:layout_constraintBottom_toBottomOf="parent"
                   app:layout_constraintStart_toStartOf="parent"
                   app:layout_constraintTop_toTopOf="parent"
-                  >
+                  android:layout_marginRight="@dimen/gnt_default_margin"
+                  android:layout_marginLeft="@dimen/gnt_no_margin">
               </TextView>
               <RatingBar
                   android:id="@+id/rating_bar"
