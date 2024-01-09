@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'in.thbd.admobads'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
         applicationId "in.thbd.admobads"
         minSdk 21
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
