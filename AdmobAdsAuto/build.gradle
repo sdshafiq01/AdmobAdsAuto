@@ -26,13 +26,15 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
 }
-//publishing {
-//    publications {
-//        maven(MavenPublication) {
-//            groupId = 'in.thbd.admobadsauto'
-//        }
-//    }
-//}
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'in.thbd.admobadsauto'
+            artifactId = 'AdsAdapter'
+            version = '1.6'
+        }
+    }
+}
 //        publishing {
 //            publications {
 //                release(MavenPublication) {
