@@ -1,16 +1,13 @@
 package in.thbd.admobadsauto.AdsAdapter;
 
 import static android.content.ContentValues.TAG;
-
 import android.app.Activity;
 import android.util.Log;
-
 import com.google.android.ump.ConsentDebugSettings;
 import com.google.android.ump.ConsentForm;
 import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.UserMessagingPlatform;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 

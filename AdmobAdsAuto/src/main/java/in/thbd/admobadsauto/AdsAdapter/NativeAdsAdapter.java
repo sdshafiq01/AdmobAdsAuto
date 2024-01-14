@@ -1,23 +1,19 @@
 package in.thbd.admobadsauto.AdsAdapter;
 
 import android.app.Activity;
-import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-
 import androidx.annotation.NonNull;
 
-import com.google.android.ads.nativetemplates.NativeTemplateStyle;
-import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.nativead.NativeAd;
-
 import in.thbd.admobadsauto.R;
+import in.thbd.admobadsauto.Utils.TemplateView;
 
 public class NativeAdsAdapter {
 

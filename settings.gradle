@@ -3,14 +3,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
 
-        maven {
-            url 'https://mvnrepository.com/artifact/com.android.tools.lint/lint-gradle-api'
-        }
     }
 }
 dependencyResolutionManagement {
@@ -22,5 +15,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Admob Ads Implements"
 include ':app'
-include ':nativetemplates'
+//include ':nativetemplates'
 include ':AdmobAdsAuto'
+//include ':nativetemplates'

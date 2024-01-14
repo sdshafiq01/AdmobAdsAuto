@@ -1,6 +1,8 @@
 plugins {
+
     id 'com.android.library'
     id 'maven-publish'
+
 }
 
 android {
@@ -64,6 +66,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.android.gms:play-services-ads:22.6.0'
-
-    implementation project(':nativetemplates')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.errorprone:error_prone_annotations:2.24.1'
+//    implementation project(':nativetemplates')
 }

@@ -2,7 +2,6 @@ package in.thbd.admobadsauto.AdsAdapter;
 
 import android.app.Activity;
 import android.util.DisplayMetrics;
-import android.view.Display;
 import android.widget.RelativeLayout;
 
 import com.google.android.gms.ads.AdListener;
