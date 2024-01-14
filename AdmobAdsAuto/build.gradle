@@ -27,12 +27,37 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
 }
-publishing {
+// 4. Add This Java Blocs:
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)        // << --- ADD This
+    }
+}
 
-    repositories {
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17            // << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+// 5. Publishing:
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.shafiq-repo'
+            artifactId = 'AdmobAdsAuto'
+            version = "1.1.03"
+            pom {
+                description = 'Admob Ads implement Library'
+            }
+        }
+    }
+    repositories {               // << --- ADD This
         mavenLocal()
     }
 }
+
+
 
 //publishing {
 //    publications {

@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class InitAds {
 
-    public static void SelectAds(Activity activity, String selectAdsBackup) {
+    public static void SelectAds(Activity activity) {
 
         MobileAds.initialize(activity, new OnInitializationCompleteListener() {
             @Override
