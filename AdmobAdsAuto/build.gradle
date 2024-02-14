@@ -43,9 +43,9 @@ java {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.shafiq-repo'
+            groupId = 'com.github.sdshafiq01'
             artifactId = 'AdmobAdsAuto'
-            version = "1.1.05"
+            version = "1.1.06"
             pom {
                 description = 'Admob Ads implement Library'
             }
