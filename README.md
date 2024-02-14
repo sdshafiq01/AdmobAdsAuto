@@ -62,5 +62,10 @@ Check out whether rewards ads are loaded or not
             RewardsAdsAdapter.loadRewardsAdmob(activity, "set up your reward ads id here");
         }
 
+Show NaTive Ads With NativeAdsAdapter
+         
+          RelativeLayout adsLayout = findViewById(R.id.adsLayout);
+          String size  = "big"; // big or small
+          NativeAdsAdapter.LoadNativeAdmob( activity, adsLayout, idNative, size);
 
         
