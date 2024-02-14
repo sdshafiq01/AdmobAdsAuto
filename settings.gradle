@@ -19,3 +19,4 @@ include ':app'
 //include ':nativetemplates'
 include ':AdmobAdsAuto'
 //include ':nativetemplates'
+

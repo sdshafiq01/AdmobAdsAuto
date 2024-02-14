@@ -1,5 +1,4 @@
 plugins {
-
     id 'com.android.library'
     id 'maven-publish'
 
@@ -7,7 +6,7 @@ plugins {
 
 android {
     namespace 'in.thbd.admobadsauto'
-    compileSdkVersion 34
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 21
@@ -57,27 +56,6 @@ publishing {
     }
 }
 
-
-
-//publishing {
-//    publications {
-//        maven(MavenPublication) {
-//            groupId = 'in.thbd.admobadsauto'
-//            artifactId = 'AdsAdapter'
-//            version = '1.6'
-//        }
-//    }
-//}
-//        publishing {
-//            publications {
-//                release(MavenPublication) {
-////                    from components.release
-//                    groupId = 'in.thbd.admobadsauto'
-//                    artifactId = 'AdmobAdsAuto'
-//                    version = '1.1'
-//                }
-//            }
-//        }
 
 
 tasks.withType(JavaCompile) {
