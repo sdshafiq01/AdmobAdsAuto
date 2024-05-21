@@ -2,6 +2,7 @@ package in.thbd.admobadsauto.AdsAdapter;
 
 import static android.content.ContentValues.TAG;
 import android.app.Activity;
+import android.provider.Settings;
 import android.util.Log;
 import com.google.android.ump.ConsentDebugSettings;
 import com.google.android.ump.ConsentForm;
@@ -10,6 +11,8 @@ import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.UserMessagingPlatform;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
+import in.thbd.admobadsauto.BuildConfig;
 
 public class AdsGDPR {
 
@@ -41,21 +44,20 @@ public class AdsGDPR {
             return hexString.toString();
 
         } catch (NoSuchAlgorithmException e) {
-            Log.e(TAG, "md5: " + e.getMessage());
+            Log.e(TAG, "md5: "+e.getMessage() );
         }
         return "";
     }
 
     public void updateGDPRConsentStatus() {
-
-//        if (BuildConfig.DEBUG) {
-//            String android_id = Settings.Secure.getString(activity.getContentResolver(), Settings.Secure.ANDROID_ID);
-//            String deviceId = md5(android_id).toUpperCase();
-//            debugSettings = new ConsentDebugSettings.Builder(activity)
-//                    .setDebugGeography(ConsentDebugSettings.DebugGeography.DEBUG_GEOGRAPHY_EEA)
-//                    .addTestDeviceHashedId(deviceId)
-//                    .build();
-//        }
+        if (BuildConfig.DEBUG) {
+            String android_id = Settings.Secure.getString(activity.getContentResolver(), Settings.Secure.ANDROID_ID);
+            String deviceId = md5(android_id).toUpperCase();
+            debugSettings = new ConsentDebugSettings.Builder(activity)
+                    .setDebugGeography(ConsentDebugSettings.DebugGeography.DEBUG_GEOGRAPHY_EEA)
+                    .addTestDeviceHashedId(deviceId)
+                    .build();
+        }
 
         debugSettings = new ConsentDebugSettings.Builder(activity)
                 .setDebugGeography(ConsentDebugSettings.DebugGeography.DEBUG_GEOGRAPHY_EEA)
@@ -74,7 +76,6 @@ public class AdsGDPR {
                 },
                 formError -> {
                 });
-
         Log.d("GDPR", "GDPR Funding choices is selected");
 
     }
@@ -92,4 +93,5 @@ public class AdsGDPR {
                 }
         );
     }
+
 }

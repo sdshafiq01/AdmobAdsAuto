@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=AdmobAdsAuto-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.sdshafiq01 -DartifactId=AdmobAdsAuto -Dversion=1.1.08 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.sdshafiq01 -DartifactId=AdmobAdsAuto -Dversion=1.1.10 -Dpackaging=aar -DgeneratePom=true

@@ -23,6 +23,7 @@ public class BannerAdsAdapter {
         adView.setAdUnitId(idBanner);
         layAds.removeAllViews();
         layAds.addView(adView);
+        adView.setAdSize(AdSize.BANNER);
 //        AdSize adSize = getAdSize(activity, layAds);
 //        adView.setAdSize(adSize);
         adView.loadAd(request);
