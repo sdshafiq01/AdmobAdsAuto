@@ -9,7 +9,7 @@ Recent Updated Version: [![](https://jitpack.io/v/sdshafiq01/AdmobAdsAuto.svg)](
   		repositories {
   			mavenCentral()
   			maven { url 'https://jitpack.io' }
-  		}
+  		} 
   	}
  
 2> Add into build.gradle (Module :app)
