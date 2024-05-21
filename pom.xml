@@ -6,5 +6,5 @@
     <artifactId>AdmobAdsAuto</artifactId>
     <version>1.1.07</version>
     <packaging>pom</packaging>
-    <description>Admob Ads implement Library</description> 
+    <description>Admob Ads implement Library</description>
 </project>

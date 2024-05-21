@@ -23,8 +23,8 @@ public class BannerAdsAdapter {
         adView.setAdUnitId(idBanner);
         layAds.removeAllViews();
         layAds.addView(adView);
-        AdSize adSize = getAdSize(activity, layAds);
-        adView.setAdSize(adSize);
+//        AdSize adSize = getAdSize(activity, layAds);
+//        adView.setAdSize(adSize);
         adView.loadAd(request);
         adView.setAdListener(new AdListener() {
 
@@ -60,23 +60,23 @@ public class BannerAdsAdapter {
     }
 
 
-    private static AdSize getAdSize(Activity activity, RelativeLayout layAds) {
+//    private static AdSize getAdSize(Activity activity, RelativeLayout layAds) {
 
-        // Determine the screen width (less decorations) to use for the ad width.
-        Display display = activity.getWindowManager().getDefaultDisplay();
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        display.getMetrics(outMetrics);
+//        // Determine the screen width (less decorations) to use for the ad width.
+//        Display display = activity.getWindowManager().getDefaultDisplay();
+//        DisplayMetrics outMetrics = new DisplayMetrics();
+//        display.getMetrics(outMetrics);
+//
+//        float density = outMetrics.density;
+//        float adWidthPixels = layAds.getWidth();
+//
+//        // If the ad hasn't been laid out, default to the full screen width.
+//        if (adWidthPixels == 0) { adWidthPixels = outMetrics.widthPixels; }
+//
+//        int adWidth = (int) (adWidthPixels / density);
+//
+//        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, adWidth);
 
-        float density = outMetrics.density;
-        float adWidthPixels = layAds.getWidth();
-
-        // If the ad hasn't been laid out, default to the full screen width.
-        if (adWidthPixels == 0) { adWidthPixels = outMetrics.widthPixels; }
-
-        int adWidth = (int) (adWidthPixels / density);
-
-        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, adWidth);
-
-    }
+//    }
 
 }
